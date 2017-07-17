@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blank</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+
+        <table class="background"><tr><td>
+
+        <table class="layout" cellspacing="0" cellpadding="0">
+
+            @@include('partials/header.html')
+
+            <!-- Contend Begin -->
+            <tr>
+                <td class="content">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Vivamus justo nunc, ultrices non consectetur non, faucibus et augue. Aenean ligula risus, sodales id porta suscipit, ornare vitae dolor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam quis dolor eget faucibus. Aliquam et venenatis nibh, eget porttitor tortor. Pellentesque semper gravida congue. Mauris porta fringilla ligula, at ullamcorper mauris pellentesque eu.</p>
+                    <div style="text-align: center">
+                        @@include('partials/link.html', {
+                            "href": "my.site.com",
+                            "text": "Click me"
+                        })
+                    </div>
+                </td>
+            </tr>
+            <!-- Content End -->
+
+            @@include('partials/footer.html')
+
+        </table>
+
+        </td></tr></table>
+
+    </body>
+</html>
