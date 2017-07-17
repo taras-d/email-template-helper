@@ -1,65 +1,7 @@
 
-@brand-color: #66b331;
+@import './variables.less';
+@import './base.less';
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Background */
-.background {
-    width: 100%;
-    > tr > td { 
-        padding: 50px 20px;
-        background-color: #f0f0f0;
-    }
-}
-
-/* Layout */
-.layout {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    font-family: sans-serif;
-    box-shadow: 0 0 10px gray;
-}
-
-/* Header & Footer */
-.header,
-.footer {
-    background-color: @brand-color;
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 40px 20px;
-}
-.footer {
-    font-size: 12px;
-    padding: 20px;
-    a {
-        font-weight: normal;
-        color: white;
-    }
-}
-
-/* Content */
-.content {
-    padding: 20px;
-    font-size: 15px;
-    background-color: white;
-    h3, p {
-        margin: 10px 0;
-    }
-}
-
-/* Link */
-.link {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: @brand-color;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
+@import '../components/header/header.less';
+@import '../components/footer/footer.less';
+@import '../components/link/link.less';

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Blank</title>
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
 
@@ -10,7 +10,7 @@
 
         <table class="layout" cellspacing="0" cellpadding="0">
 
-            @@include('partials/header.html')
+            @@include('components/header/header.html')
 
             <!-- Contend Begin -->
             <tr>
@@ -19,7 +19,7 @@
                     <p>Vivamus justo nunc, ultrices non consectetur non, faucibus et augue. Aenean ligula risus, sodales id porta suscipit, ornare vitae dolor.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam quis dolor eget faucibus. Aliquam et venenatis nibh, eget porttitor tortor. Pellentesque semper gravida congue. Mauris porta fringilla ligula, at ullamcorper mauris pellentesque eu.</p>
                     <div style="text-align: center">
-                        @@include('partials/link.html', {
+                        @@include('components/link/link.html', {
                             "href": "my.site.com",
                             "text": "Click me"
                         })
@@ -28,7 +28,7 @@
             </tr>
             <!-- Content End -->
 
-            @@include('partials/footer.html')
+            @@include('components/footer/footer.html')
 
         </table>
 

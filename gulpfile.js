@@ -20,7 +20,7 @@ gulp.task('email:less', function() {
     return gulp.src('src/styles/styles.less')
         .pipe(plumber())
         .pipe(less(lessOptions))
-        .pipe(gulp.dest('src/styles'));
+        .pipe(gulp.dest('src'));
 });
 
 gulp.task('email:template', function() {
@@ -42,7 +42,8 @@ gulp.task('email', function(cb) {
 gulp.task('watch', ['email'], function() {
     gulp.watch([
         'src/styles/**/*.less',
-        'src/partials/**/*.html',
+        'src/components/**/*.less',
+        'src/components/**/*.html',
         'src/templates/**/*.html'
     ], ['email']);
 });
