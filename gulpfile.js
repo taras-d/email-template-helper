@@ -42,8 +42,7 @@ gulp.task('email', function(cb) {
 gulp.task('watch', ['email'], function() {
     gulp.watch([
         'src/styles/**/*.less',
-        'src/components/**/*.less',
-        'src/components/**/*.html',
+        'src/components/**/*(*.less|*.html)',
         'src/templates/**/*.html'
     ], ['email']);
 });
